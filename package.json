@@ -7,7 +7,8 @@
     "eslint": "eslint .",
     "stylelint": "stylelint \"**/*.{css,scss}\"",
     "fix": "stylelint --fix \"**/*.{css,scss}\"",
-    "test": "npm run fix && npm run stylelint && npm run eslint && echo '🎉All test pass🎉'"
+    "test": "npm run fix && npm run stylelint && npm run eslint && echo '🎉 All test pass 🎉'",
+    "watch": "node-sass -w assets/scss/ -o assets/css/"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "node-sass": "^4.14.1",
     "stylelint": "^13.3.3",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-csstree-validator": "^1.8.0",
