@@ -1,1 +1,1 @@
-# template-eslint-stylelint
+node_modules/
