@@ -8,11 +8,17 @@ module.exports = {
     filename: '[name].js',
     path: path.join(__dirname, 'dist'),
   },
-
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    hot: true,
+    port: 3000,
+  },
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.s[ca]ss$/i,
